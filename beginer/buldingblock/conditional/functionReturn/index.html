@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <input class="numberInput" type="text">
+  <p></p>
+
+  <script>
+    var input = document.querySelector('.numberInput');
+    var para = document.querySelector('p');
+
+    input.onchange = () => {
+        var num = input.value;
+        if(isNaN(num)) {
+            para.textContent = 'You need to enter a number';
+        } else {
+            para.html = `${num} squared is ${squared(num)} .
+                ${num} cubed is ${cubed(num)} .
+                ${num} factorial is ${factorial(num)}
+            `
+        }
+    }
+    /*
+    Tính bình phương
+    */
+    function squared(num) {
+        return num * num;
+    }
+    /*
+    Tính lập phương
+    */
+    function cubed(num) {
+        return num * num * num;
+    }
+    /*
+    Tính giai thừa
+    */
+    function factorial(num) {
+        var x = num;
+        while (x > 1) {
+            num *= x-1;
+            x--;
+        }
+        return num;
+
+    }
+  </script>
+</body>
+</html>
