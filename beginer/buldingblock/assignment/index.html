@@ -6,8 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="./index.js" charset="utf-8"></script>
+    <style>
+        img.thumbnail-images {
+            width: 10%;
+        }
+        img.displayed-img {
+            width: 665px;
+            position: inherit;
+        }
+    </style>
+      
 </head>
 <body>
+        
+        <h1>Image gallery example</h1>
+        <div class="full-img">
+            <img class="displayed-img" src="images/pic1.jpg">
+            <div class="overlay"></div>
+            <button class="dark">Darken</button>
+        </div>
+        <div class="thumb-bar">
+        </div>
+        <script>            
+                createImageList();
+                function createImageList (){
+                    var thumbBar = document.querySelector('div.thumb-bar');
+                    console.log(thumbBar);
+                    for(let i = 1 ;i < 6; i++) {
+                        var imgs = document.createElement('img');
+                        imgs.setAttribute('class', 'thumbnail-images');
+                        imgs.setAttribute('src', `images/pic${i}.jpg`);
+                        imgs.setAttribute('onclick', `select('pic${i}')`);
+                        thumbBar.appendChild(imgs);
+                    }     
+                };
+
+                function select(name) {
+                    var nameImg = name;
+                    var displayImg = document.querySelector('img.displayed-img');
+                    displayImg.setAttribute('src', `images/${name}.jpg`);
+                }
+        </script>
 
 </body>
 </html>
