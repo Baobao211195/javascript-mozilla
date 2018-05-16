@@ -1,5 +1,5 @@
-function select(name) {
-    var nameImg = name;
-    console.log(`${name}`);
-}
+// function select(name) {
+//     var nameImg = name;
+//     console.log(`${name}`);
+// }
 
