@@ -1,0 +1,4 @@
+ObjectPlayground.com — A really useful interactive learning site for learning about objects.
+Secrets of the JavaScript Ninja, Chapter 6 — A good book on advanced JavaScript concepts and techniques, by John Resig and Bear Bibeault. Chapter 6 covers aspects of prototypes and inheritance really well; you can probably track down a print or online copy fairly easily.
+You Don't Know JS: this & Object Prototypes — Part of Kyle Simpson's excellent series of JavaScript manuals, Chapter 5 in particular looks at prototypes in much more detail than we do here. We've presented a simplified view in this series of articles aimed at beginners,
+ whereas Kyle goes into great depth and provides a more complex but more accurate picture.
