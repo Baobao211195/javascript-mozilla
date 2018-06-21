@@ -1,0 +1,5 @@
+// update npm npm-window-upgrade
+run power shell with addmin 
+    Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+    npm install --global --production npm-windows-upgrade
+    npm-windows-upgrade --npm-version latest 
