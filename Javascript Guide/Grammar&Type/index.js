@@ -71,3 +71,32 @@ var myvar = 'my value';
   console.log(myvar); // undefined
   var myvar = 'local value';
 })();
+
+
+// 7. Function hoisting
+console.log("==========================> Function hoisting");
+foo();
+function foo() {
+    console.log("Barrr");
+    
+}
+//baz(); // Baz is not a function because
+// bar is a variable but i use a variable does not define
+var baz = () => console.log("Bar2rrrrr");
+
+
+// 8. Constant
+/**
+ * Các thuộc tính của một object là constant thì không phải là constant
+ * điều này tương tự như đối vói object.
+ */
+const MY_OBJECT = {'key' : 'value'};
+console.log(`Before change constant : ${MY_OBJECT.key}`);
+MY_OBJECT.key = 'change value'
+console.log(`After change constant : ${MY_OBJECT.key}`);
+
+const MY_ARRAY = ["OANH", "VAN"];
+
+console.log(`Before change array constant : ${MY_ARRAY}`);
+MY_ARRAY[1] = 'Oanh changed'
+console.log(`After change array constant : ${MY_ARRAY}`);
