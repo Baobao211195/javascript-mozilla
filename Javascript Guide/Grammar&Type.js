@@ -78,7 +78,7 @@ console.log("==========================> Function hoisting");
 foo();
 function foo() {
     console.log("Barrr");
-    
+
 }
 //baz(); // Baz is not a function because
 // bar is a variable but i use a variable does not define
