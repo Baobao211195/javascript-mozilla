@@ -1,6 +1,6 @@
 //1.Array Object
 
-var colors = ['red', 'green', ,'blue'];
+var colors = ['red', 'green','blue'];
 
 // Cách 1  : liệt kê tất cả các thành phần
 for (let index = 0; index < colors.length; index++) {
@@ -43,7 +43,8 @@ colors.filter(function (color) {
 }).forEach(color => console.log("Filtered color : " + color));
      
 // sử dụng every giống allMatch trong java 8
-
+var allMatch = colors.every(function (item) {return item instanceof String;});
+console.log("All matched" + allMatch);
 
 // sử dụng some giống anyMatch trong java 8
 
