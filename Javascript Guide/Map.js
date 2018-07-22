@@ -128,3 +128,8 @@ for (const [k, v] of mapMergedArray) {
     console.log(`mergedArray : ${k} is ${v}`)
 }
 mapMergedArray.forEach((key, value) => console.log(`mergedArray : ${key} is ${value}`));
+
+// Ngoài ta còn có WeakMap
+// Là một collection vs key chỉ là object còn value thì tùy
+// Giống map nhưng vì key là object nên ko thể enumerate => ko có
+// phương thức nào trả về một list keys
