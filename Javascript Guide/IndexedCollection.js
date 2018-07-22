@@ -62,3 +62,32 @@ console.log("Tổng là : " + sum);
 
 
 //2. Làm việc với mảng như object.
+
+// 3. Typed arrays.
+/**
+ * Typed array chia thành buffers và view.
+ * + Buffer (dược implement bởi ArrayBuffer) là một object
+ *  biểu diễn các mảnh dữ liệu (chunk of data). và nó ko đưa ra một 
+ * kỹ thuận nào để truy nhập và nội dung của buffer.
+ * + Sử dụng view để truy cập vào bộ nhớ trong buffer., view cung cấp 1
+ * context bao gồm data type, starting offset và số lượng các thành phần,
+ * trả về dữ liệu thực tế trong typed array.
+ * 
+ */
+
+ // 3.1 ArrayBuffer
+ /**   
+  * là môt dạng data type sử dụng để mô tả một loại bộ nhớ đệm dữ liệu nhị phân
+  * . Không thể thao tác trực tiếp vào nội dung
+  * . Thay vào đó bạn tạo ra một typed array view để thể hiện buffer
+  * dưới một định dạng cụ thể và sử dụng nó để đọc và ghi nội dung
+  * vào buffer.
+  */
+
+  // 3.2 Typed array views
+  /**   
+   * Typed array views have self descriptive names 
+   * and provide views for all the usual numeric types like Int8, 
+   * Uint32, Float64 and so forth
+   * . This is useful for Canvas data processing,
+   */
