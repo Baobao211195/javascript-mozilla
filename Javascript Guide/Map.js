@@ -116,11 +116,28 @@ var mapSecond = new Map([
 
 // merge 2 map
 var mapMerged = new Map([...mapSecond, ...mapFirst]);
-mapMerged.forEach((key, value) => console.log(`Merged : ${key} is ${value}`));
 
+// Cách 1
+mapMerged.forEach((k, v) => console.log(`Merged : ${k} is ${v}`));
+
+/**
+ * Out put của cách 1
+ * Merged : one is 1
+    Merged : two is 2
+    Merged : three is 3
+ */
+// Cách 2
 for (const [k, v] of mapMerged) {
     console.log(`Merged : ${k} is ${v}`)
 }
+/**
+ * Output của cách 2 
+ *  Merged : 1 is one
+    Merged : 2 is two
+    Merged : 3 is three
+ */
+
+
 
 // map có thể merge cùng vs mảng
 var mapMergedArray = new Map([...mapSecond, ...mapFirst], [1, 'oanhpv']);
